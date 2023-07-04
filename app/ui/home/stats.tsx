@@ -33,7 +33,7 @@ export default async function Stats() {
     },
   )
     .then((res) => res.json())
-    .then((res) => res.data[0]["count(timestamp)"]);
+    .then((res) => res.data?.[0]["count(timestamp)"]);
 
   return (
     <div className="border-y border-gray-200 bg-white/10 py-8 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur">
